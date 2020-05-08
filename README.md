@@ -4,11 +4,9 @@ En la actualidad (7 mayo de 2020) no existe un paquete instalable del DAW Ardour
 
 ## Instalación de Dependencias
 
-
 ```bash
-$ su -
-# apt update && apt upgrade
-# apt install libboost-dev libboost1.67-dev libglibmm-2.4-dev libsigc++-2.0-dev libtag1-dev \
+apt update && apt upgrade
+apt install libboost-dev libboost1.67-dev libglibmm-2.4-dev libsigc++-2.0-dev libtag1-dev \
     vamp-plugin-sdk libudev-dev libfftw3-bin libfftw3-dev libfftw3-long3 libfftw3-quad3 \
     libaubio-dev libaubio5 libusb-1.0-0-dev libpangomm-1.4-dev libsamplerate0-dev  lv2-dev \
     libserd-dev libsord-dev libsratom-dev liblilv-dev libgtkmm-2.4-dev libsuil-dev libreadline6-dev \
@@ -18,6 +16,8 @@ $ su -
 ## Obtención del Software
 
 La mejor vía para obtener el código fuente es a través de la descarga del TAR desde https://community.ardour.org/srctar. Hay una vía alterna usando el repositorio GIT, pero de esta manera se obtendrá la versión de desarrollo, a la cual se le realizan cambios diariamente y hay una alta probablilidad de hacerse con librerías que estén rotas o con bugs que se están arreglando mientras compilamos, así que:
+
+Como usuario regular (nada de root por lo pronto) ejecutamos:
 
 ```bash
 wget https://community.ardour.org/srctar -O Ardour-5.12.0.tar.bz2
@@ -41,5 +41,30 @@ Finalmente procedemos a compilar:
 ./waf
 ```
 
+## Instalando en el sistema
+
+Hasta este punto ya Ardour es usable. En el directorio "gtk2_ardour" que se ha creado durante la compilación hay un binario llamado "ardev" el cual al ejecutarlo se abre la aplicación, pero ya va:
+
+Ahora si, como root:
+```bash
+su
+./waf install
+exit
+```
+
+Y ¡listo! como hemos llamado "ardour5" a nuestro programa (flag --program-name) ejecutamos en una cónsola:
+
+```bash
+ardour5
+```
+
+Ahora bien, si queremos usar un ícono en el menú de nuestro WM preferido:
+```bash
+su
+cp ./build/gtk2_ardour/ardour5.desktop /usr/share/applications/
+exit
+```
+
+Mola un montón compilar nuestras propias aplicaciones preferidas en Software Libre: ¿si o qué?
 
 
