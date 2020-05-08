@@ -62,6 +62,10 @@ Ahora bien, si queremos usar un ícono en el menú de nuestro WM preferido:
 ```bash
 su
 cp ./build/gtk2_ardour/ardour5.desktop /usr/share/applications/
+cp /usr/local/share/ardour5/icons/application-x-ardour_48px.png /usr/local/share/ardour5/icons/ardour5-icon_48px.png
+cp /usr/local/share/ardour5/icons/application-x-ardour_16px.png /usr/local/share/ardour5/icons/ardour5-icon_16px.png
+cp /usr/local/share/ardour5/icons/application-x-ardour_22px.png /usr/local/share/ardour5/icons/ardour5-icon_22px.png
+cp /usr/local/share/ardour5/icons/application-x-ardour_32px.png /usr/local/share/ardour5/icons/ardour5-icon_32px.png
 exit
 ```
 
