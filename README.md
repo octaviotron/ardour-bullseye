@@ -1,5 +1,10 @@
 # Compilación de Ardour 5.12 para Debian Bullseye
 
+```
+Por Octavio Rossell <octavio@gnu.org.ve>
+Licencia CC-BY-SA
+```
+
 En la actualidad (7 mayo de 2020) no existe un paquete instalable del DAW Ardour para Debian Bullseye. Este pequeño tutorial instruye cómo obtenerlo y correr esta muy necesaria herramienta para aquellos a quienes nos gusta la producción de audio profesional en GNU/Linux.
 
 ## Instalación de Dependencias
