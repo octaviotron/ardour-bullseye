@@ -1,4 +1,4 @@
-# Compilación de Ardour 5.12 para Debian Bullseye
+# Compilación de Ardour 6 para Debian Bullseye
 
 ```
 Por Octavio Rossell <octavio@gnu.org.ve>
