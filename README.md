@@ -27,7 +27,7 @@ Como usuario regular (nada de root por lo pronto) ejecutamos:
 ```bash
 wget https://community.ardour.org/srctar -O Ardour-6.0.0.tar.bz2
 tar -xjf Ardour-6.0.0.tar.bz2
-cd Ardour-5.0.0
+cd Ardour-6.0.0
 ```
 
 Pera el momento de creación de este documento, la última versión estable es la 6.0.0. Es posible que el comando anterior requiera ajustar la ruta si cambia el nombre del directorio que se crea al descomprimir el .tar.bz2
@@ -60,7 +60,7 @@ exit
 Y ¡listo! como hemos llamado "ardour5" a nuestro programa (flag --program-name) ejecutamos en una cónsola:
 
 ```bash
-ardour5
+ardour6
 ```
 
 Ahora bien, si queremos usar un ícono en el menú de nuestro WM preferido:
