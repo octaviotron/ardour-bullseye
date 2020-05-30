@@ -57,7 +57,7 @@ su
 exit
 ```
 
-Y ¡listo! como hemos llamado "ardour5" a nuestro programa (flag --program-name) ejecutamos en una cónsola:
+Y ¡listo! como hemos llamado "ardour6" a nuestro programa (flag --program-name) ejecutamos en una cónsola:
 
 ```bash
 ardour6
